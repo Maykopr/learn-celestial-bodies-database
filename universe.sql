@@ -308,6 +308,17 @@ INSERT INTO public.moon VALUES (7, 'encelado', 'saturno', 504, 237948, 4);
 INSERT INTO public.moon VALUES (8, 'ganimedes', 'jupiter', 5.268, 1882700, 3);
 INSERT INTO public.moon VALUES (9, 'calisto', 'jupiter', 4.820, 1882700, 3);
 INSERT INTO public.moon VALUES (10, 'miranda', 'urano', 471.6, 129900, 6);
+INSERT INTO public.moon VALUES (11, 'fobos', 'marte', 22.2, 9378, 2);
+INSERT INTO public.moon VALUES (12, 'deimos', 'marte', 12.4, 23.46, 2);
+INSERT INTO public.moon VALUES (13, 'mimas', 'saturno', 396, 18552, 4);
+INSERT INTO public.moon VALUES (14, 'reia', 'saturno', 764.3, 52704, 4);
+INSERT INTO public.moon VALUES (15, 'charon', 'plutao', 1.212, 19573, 7);
+INSERT INTO public.moon VALUES (16, 'titania', 'urano', 1.578, 4363, 6);
+INSERT INTO public.moon VALUES (17, 'ariel', 'urano', 578.9, 1909, 6);
+INSERT INTO public.moon VALUES (18, 'oberon', 'urano', 761.4, 584, 6);
+INSERT INTO public.moon VALUES (19, 'Triton', 'Netuno', 2707, 354800, 5);
+INSERT INTO public.moon VALUES (20, 'Ganymede', 'Jupiter', 5268, 1882700, 3);
+INSERT INTO public.moon VALUES (21, 'Callisto', 'Jupiter', 4820, 1882700, 3);
 
 
 --
@@ -321,6 +332,11 @@ INSERT INTO public.planet VALUES (4, 'saturno', 'gasoso', 95.2, 9.5, true, 1, fa
 INSERT INTO public.planet VALUES (5, 'netuno', 'gasoso', 17.15, 30.07, true, 1, false);
 INSERT INTO public.planet VALUES (6, 'urano', 'gasoso', 14.54, 19.22, true, 1, false);
 INSERT INTO public.planet VALUES (7, 'plutao', 'anao', 0.0022, 39.48, true, 1, false);
+INSERT INTO public.planet VALUES (8, 'venus', 'Terrestre', 0.82, 0.72, true, 1, true);
+INSERT INTO public.planet VALUES (9, 'june', 'Terrestre', 0.055, 0.39, true, 1, false);
+INSERT INTO public.planet VALUES (10, 'netune', 'Gasoso', 17.15, 30.07, true, 1, false);
+INSERT INTO public.planet VALUES (11, 'pluto', 'Anão', 0.0022, 39.48, true, 1, false);
+INSERT INTO public.planet VALUES (12, 'merkur', 'Terrestre', 0.06, 0.39, true, 1, false);
 
 
 --
@@ -357,14 +373,14 @@ SELECT pg_catalog.setval('public.galaxy_galaxy_id_seq', 10, true);
 -- Name: moon_moon_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.moon_moon_id_seq', 10, true);
+SELECT pg_catalog.setval('public.moon_moon_id_seq', 21, true);
 
 
 --
 -- Name: planet_planet_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.planet_planet_id_seq', 7, true);
+SELECT pg_catalog.setval('public.planet_planet_id_seq', 12, true);
 
 
 --
